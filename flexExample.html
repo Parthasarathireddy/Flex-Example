@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Example</title>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between; /* Distribute space between items */
+  align-items: center;            /* Align items vertically center */
+  height: 100vh;                  /* Full viewport height */
+  background-color: #f0f0f0;      /* Light grey background */
+  flex-direction: row;
+flex-wrap: wrap-reverse;
+flex-grow: 3;
+
+}
+
+.item {
+  background-color: #3498db; /* Blue background for items */
+  color: white;
+  padding: 50px;
+  border-radius: 5px;
+  flex: 4;                     /* Each item will grow equally */
+  margin: 0 10px;              /* Space between items */
+  text-align: center;
+}
+.item1 {
+  flex-shrink: 1;
+}
+
+.item2 {
+  flex-shrink: 1;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item1">3</div>
+  </div>
+</body>
+</html>
